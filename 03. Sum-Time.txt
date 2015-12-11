@@ -1,0 +1,20 @@
+Write a program to sum a set of time intervals in format days::hours:minutes. Minutes should be displayed with leading zeroes. If days are more than 0, show them also.
+
+Input:
+3::11:30
+12:45
+Output:
+4::2:30
+
+0:06
+23:55
+Output:
+1::0:01
+
+1:30
+2:35
+Output:
+3:05
+
+Trivial: minutes % 60; hours % 24 + simple parsing
+Level: 3/10

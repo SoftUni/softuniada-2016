@@ -1,0 +1,21 @@
+An elevator has capacity of W kg and P persons. You are given a sequence of N persons with weights w1, ..., wn to be lifted by the elevator. Group the people in minimal number of groups G so that each group has <= P members and total weight <= W. Print the number G.
+
+Input:
+  W = 100
+  P = 4
+  People = 1 40 90 70 5 29 58 3
+Output:
+  3 groups
+  40 + 58
+  70 + 29
+  90 + 5 + 3 + 1
+
+Solution: dynamic programming + greedy.
+
+While possible, find the "optimal" group and remove it. The optimal group is a subset of elements, such that their total weight is maximal, but <= W and their count <= P.
+
+Level: 10/10
+
+Bin packing problem: 
+https://en.wikipedia.org/wiki/Bin_packing_problem
+http://ijcai.org/Past%20Proceedings/IJCAI-2003/PDF/179.pdf

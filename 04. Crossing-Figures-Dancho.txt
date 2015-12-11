@@ -1,0 +1,21 @@
+Crossing Figures (Simple Geometry)
+----------------------------------
+
+We are given a rectangle and circle. Find their relative position:
+ - non-crossing
+ - crossing
+ - circle inside square
+ - square inside circle
+
+Example:
+circle(3, 3, 5)
+rectangle(10, 5, -3, 12)
+
+
+Simple parsing + simple logic (basic geometry)
+
+Level: 4/10
+
+http://stackoverflow.com/questions/9486520/finding-if-a-circle-is-inside-another-circle
+http://stackoverflow.com/questions/14097290/check-if-circle-contains-rectangle
+http://stackoverflow.com/questions/13601155/best-algorithms-to-determine-the-whether-a-rectangle-is-inside-a-circle

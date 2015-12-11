@@ -1,0 +1,8 @@
+Graph Matching in Genaral case (not necessary bipartithe):
+
+Check for blossoms: http://resources.mpi-inf.mpg.de/departments/d1/teaching/ss12/AdvancedGraphAlgorithms/Slides05.pdf
+
+http://www.cs.princeton.edu/courses/archive/spr11/cos423/Lectures/GraphMatching.pdf
+
+Graphs
+Level: 6/10

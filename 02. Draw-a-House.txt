@@ -1,0 +1,20 @@
+Draw a House
+------------
+
+Input: 5
+
+Output:
+
+    *
+   * *
+  *   *
+ *     *
+* * * * *
++-------+
+|       |
+|       |
+|       |
++-------+
+
+Solution: trivial, 2-3 loops
+Level: 2/10

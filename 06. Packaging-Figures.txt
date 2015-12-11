@@ -1,0 +1,16 @@
+Packaging Figures (Geometry + Longest Path)
+-------------------------------------------
+
+We are given N figures in the 2D plane: squares, circles and rectangles. A figure FA is inside another figure FB if the entire area of FA is inside the figure FB. We denote this as FA < FB. Find the longest sequence of figures F1 < F2 < ... < FK. If several longest sequences exist, find the first in the alphabetical order. All coodinates are integers in range [-100 000 ... 100 000].
+
+Hint: build a graph and find the longest path in it: https://www.quora.com/What-is-an-algorithm-to-find-a-longest-path-in-a-unweighted-directed-acyclic-graph
+
+Example:
+circle(3, 3, 5)
+rectangle(10, 5, -3, 12)
+square(10, 5, 12)
+
+
+Geometry + Graphs
+
+Level: 6/10
