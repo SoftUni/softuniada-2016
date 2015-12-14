@@ -4,12 +4,16 @@ Crossing Figures (Simple Geometry)
 We are given a rectangle and circle. Find their relative position:
  - non-crossing
  - crossing
- - circle inside square
- - square inside circle
+ - circle inside rectangle
+ - rectangle inside circle
 
 Example:
 circle(3, 3, 5)
 rectangle(10, 5, -3, 12)
+
+Example:
+rectangle(5, -5, 0, 20)
+circle(-5, 12, 15)
 
 
 Simple parsing + simple logic (basic geometry)
