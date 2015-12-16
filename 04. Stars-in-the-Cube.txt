@@ -1,0 +1,25 @@
+Stars in the Cube (Coding with 3-Dimentional Array)
+---------------------------------------------------
+
+We are given a cube of Latin letters of size n * n * n given as n matrices of size n * n.
+
+Write a program to calculate how many 3D stars of 7 cells (center, up, down, left, right,
+front, back) holding equal letters exist in the cube.
+
+Input:
+
+a a a a a | a p a a a | a a a a a | a p a a a | a a a a a
+a p a a a | p p p a a | a p a a a | p p p a a | a p a a a
+a a a a a | a p c c a | a a a a a | a p a a a | a a a a a
+a a c c a | a c c c c | a a c c a | a a a a a | a a a a a
+a a a a a | a a c c a | a a a a a | a a a a a | a a a a a
+
+Output:
+
+a -> 1
+c -> 2
+p -> 2
+
+Simple logic (nested loops)
+
+Level: 4/10
