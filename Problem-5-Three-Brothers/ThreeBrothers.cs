@@ -10,7 +10,6 @@ class ThreeBrothers
         for (int i = 0; i < n; i++)
         {
             int[] nums = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
-            Console.WriteLine(nums.Length);
             Console.WriteLine(Check3Partitions(nums) ? "Yes" : "No");
         }
     }
