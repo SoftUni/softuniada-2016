@@ -8,18 +8,20 @@ front, back) holding equal letters exist in the cube.
 
 Input:
 
-a a a a a | a p a a a | a a a a a | a p a a a | a a a a a
-a p a a a | p p p a a | a p a a a | p p p a a | a p a a a
-a a a a a | a p c c a | a a a a a | a p a a a | a a a a a
-a a c c a | a c c c c | a a c c a | a a a a a | a a a a a
-a a a a a | a a c c a | a a a a a | a a a a a | a a a a a
+5
+a a a a a | a p a a a | a a a a a | a p a a a | p p p p p
+a p a a a | p p p a a | a p a a a | p p p a a | p p p p p
+a a a a a | a p x x a | a p a a a | p p p a a | p p p p p
+a a x x a | a x x x x | a a x x a | a p a a a | p p p p p
+a a a a a | a a x x a | a a a a a | a a a a a | p p p p p
 
 Output:
 
+6
 a -> 1
-c -> 2
-p -> 2
+p -> 3
+x -> 2
 
 Simple logic (nested loops)
 
-Level: 4/10
+Level: 3/10
