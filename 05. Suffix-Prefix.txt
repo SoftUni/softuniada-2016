@@ -1,0 +1,9 @@
+Suffix Prefix
+-------------
+
+Да се опише не като стрингове, а като поредица числа от 0 до 100.
+
+
+http://www.spoj.com/problems/PRJAN15C/
+https://github.com/spaghetti-source/Competitive-Programming/blob/master/SPOJ22535.cc
+
