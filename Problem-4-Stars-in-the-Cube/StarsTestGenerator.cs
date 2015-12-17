@@ -4,8 +4,8 @@ public class StarsTestGenerator
 {
     static void Main()
     {
-        int n = 50;
-        int starsCount = 300;
+        int n = 75;
+        int starsCount = 5;
 
         // Generate random cube
         Random rnd = new Random();
