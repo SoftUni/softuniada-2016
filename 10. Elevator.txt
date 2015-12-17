@@ -4,6 +4,7 @@ Input:
   W = 100
   P = 4
   People = 1 40 90 70 5 29 58 3
+  
 Output:
   3 groups
   40 + 58
