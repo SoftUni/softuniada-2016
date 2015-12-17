@@ -1,0 +1,6 @@
+5
+z y y y z | y y z b y | y z z z z | y z z z z | y z y z z
+z z y z y | z z z c z | z z z z a | z a z g y | z a y z w
+p z y z b | y y y z y | c a z z y | a a a z z | z a z b z
+z y z z y | a a y z c | y z y a z | z a z y z | x z z a y
+z z z y z | z z z z y | y a y k z | y z y z z | c z y z y

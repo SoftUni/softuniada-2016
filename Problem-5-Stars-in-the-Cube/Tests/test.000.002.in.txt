@@ -1,0 +1,4 @@
+3
+x x x | x a x | x x x
+x a x | a a a | x a x
+x x x | x a x | x x x

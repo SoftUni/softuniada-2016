@@ -20,7 +20,7 @@ class StarsInTheCube
             }
         }
 
-        // Find all 7-cell stars in the cube
+        // Find all 7-cell 3D stars in the cube
         int starsCount = 0;
         char[] starsCountsByLetter = new char['z' - 'a' + 1];
         for (int w = 1; w < n - 1; w++)

@@ -1,0 +1,6 @@
+5
+a a a a a | a p a a a | a a a a a | a p a a a | p p p p p
+a p a a a | p p p a a | a p a a a | p p p a a | p p p p p
+a a a a a | a p x x a | a p a a a | p p p z a | p p p p p
+a a x x a | a x x x x | a a x x a | a p z z z | p p p z p
+a a a a a | a a x x a | a a a a a | a a a z a | p p p p p
