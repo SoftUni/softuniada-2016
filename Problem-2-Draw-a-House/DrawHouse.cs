@@ -9,14 +9,14 @@ class DrawHouse
         // Print the triangle roof of stars
         for (int line = 1; line < n; line++)
         {
-            Console.Write(new string(' ', n - line));
+            Console.Write(new string('.', n - line));
             Console.Write('*');
             if (line > 1)
             {
                 Console.Write(new string(' ', 2 * line - 3));
                 Console.Write('*');
             }
-            Console.WriteLine();
+            Console.WriteLine(new string('.', n - line));
         }
         Console.Write('*');
         for (int i = 1; i < n; i++)
