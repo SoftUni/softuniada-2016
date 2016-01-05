@@ -1,0 +1,3 @@
+First (2471, 2082) -> 82 stars
+Second (3019, 7575) -> 104 stars
+Third (7648, 3579) -> 98 stars

@@ -1,0 +1,2 @@
+BottomRight (7751, 7193) -> 26 stars
+TopLeft (1782, 1307) -> 26 stars

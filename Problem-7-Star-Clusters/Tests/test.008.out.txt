@@ -1,0 +1,2 @@
+BottomRight (7688, 5535) -> 39 stars
+TopLeft (2405, 3195) -> 33 stars

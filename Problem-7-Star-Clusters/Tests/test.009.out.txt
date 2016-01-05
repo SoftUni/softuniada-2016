@@ -1,0 +1,5 @@
+BottomLeft (2771, 5906) -> 26 stars
+BottomRight (7404, 6154) -> 23 stars
+Center (5548, 3665) -> 15 stars
+TopLeft (2748, 1789) -> 19 stars
+TopRight (8057, 1668) -> 18 stars

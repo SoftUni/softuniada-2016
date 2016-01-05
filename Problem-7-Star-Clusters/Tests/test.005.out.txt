@@ -1,0 +1,5 @@
+BottomLeft (41, 2547) -> 1 stars
+BottomRight (2967, 2554) -> 1 stars
+Center (1617, 1388) -> 29 stars
+TopLeft (67, 82) -> 1 stars
+TopRight (2949, 75) -> 1 stars

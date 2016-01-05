@@ -1,0 +1,6 @@
+NGC881 (7, 9) -> 1 stars
+NGC882 (195, 81) -> 1 stars
+NGC883 (64, 141) -> 1 stars
+NGC884 (25, 80) -> 1 stars
+NGC885 (172, 162) -> 1 stars
+NGC886 (138, 35) -> 1 stars

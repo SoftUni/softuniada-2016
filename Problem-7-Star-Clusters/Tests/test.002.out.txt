@@ -1,0 +1,5 @@
+NGC1518 (71, 62) -> 5 stars
+NGC1522 (33, 160) -> 6 stars
+NGC2322 (174, 84) -> 6 stars
+NGC389 (138, 15) -> 5 stars
+NGC426 (12, 12) -> 5 stars

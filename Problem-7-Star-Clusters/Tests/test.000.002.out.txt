@@ -1,0 +1,5 @@
+NGC103 (0, 8) -> 2 stars
+NGC129 (6, 5) -> 3 stars
+NGC133 (1, 1) -> 1 stars
+NGC189 (12, 1) -> 5 stars
+NGC225 (12, 8) -> 3 stars
