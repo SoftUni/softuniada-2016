@@ -1,0 +1,46 @@
+square square24709 53 -85 39
+circle circle22014 -53 -84 42
+square square2306 -49934 49876 9961
+circle circle92264 -39985 39949 9957
+rectangle rect65624 28 78 51 60
+square square53227 -13 -2 38
+square square83626 63 -63 13
+circle circle25409 109 -44 30
+rectangle rect11986 -49977 49990 49974 -49975
+circle circle50183 -40007 39969 9972
+circle circle13514 75 -13 32
+rectangle rect70130 -91 99 94 62
+square square83652 97 58 34
+square square55563 -60 8 36
+circle circle88162 10 -94 46
+square square73335 -65 7 14
+circle circle23908 90 -11 15
+rectangle rect89323 -1 83 30 -8
+rectangle rect11732 -42 -57 65 -93
+circle circle40755 103 -28 45
+square square51778 -49946 49962 9982
+rectangle rect44916 9 79 22 -25
+circle circle88614 100 -97 39
+rectangle rect329 68 82 74 -22
+rectangle rect70840 -49875 49925 49873 -49883
+rectangle rect21456 -49921 49966 49921 -49941
+rectangle rect3753 -50 28 55 -21
+square square25176 -49945 49922 9965
+rectangle rect22225 94 67 99 28
+square square2990 75 42 6
+rectangle rect43877 89 1 96 -5
+circle circle62946 -39993 39947 9962
+square square92750 91 8 1
+circle circle48879 -39976 39964 9940
+rectangle rect6750 -49916 49938 49906 -49894
+circle circle53995 -40004 39999 9984
+circle circle17486 -89 -57 11
+rectangle rect27500 -49961 49987 49927 -49951
+square square40963 50 -68 12
+rectangle rect76354 98 -13 100 -45
+circle circle8363 98 9 47
+circle circle73182 81 42 34
+square square67057 -49996 49972 9991
+square square85322 -49987 49963 9983
+square square50936 -36 -64 36
+End

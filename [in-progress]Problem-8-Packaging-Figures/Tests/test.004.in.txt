@@ -1,0 +1,8 @@
+rectangle Zeta -150 50 10 20
+rectangle Sigma -60 50 40 -20
+rectangle Gamma -150 20 10 0
+rectangle Lambda 1 1 12 -25
+square Square 300 300 10
+circle Outer -10 10 500
+circle Inner -10 10 5
+End

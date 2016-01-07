@@ -1,0 +1,8 @@
+rectangle Theta -30 40 55 -10
+square Delta -40 30 20
+rectangle Alpha -60 50 40 -20
+square Zeta -50 30 30
+circle Beta 5 15 15
+circle Lambda 50 30 20
+rectangle Gamma -40 40 60 -35
+End
