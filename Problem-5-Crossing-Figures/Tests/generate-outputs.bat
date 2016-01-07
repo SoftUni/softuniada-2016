@@ -1,5 +1,5 @@
 FOR %%f in ("*.in.txt") DO (
 	SETLOCAL EnableDelayedExpansion
     SET "file=%%f"
-    ..\bin\Debug\Problem-4-Crossing-Figures.exe < "%%f" > "!file:.in.txt=.out.txt!"
+    ..\bin\Debug\Problem-5-Crossing-Figures.exe < "%%f" > "!file:.in.txt=.out.txt!"
 )

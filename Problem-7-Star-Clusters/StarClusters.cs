@@ -6,8 +6,6 @@ using System.Threading;
 
 public class StarClusters
 {
-    private static Random random = new Random();
-
     public static void Main()
     {
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
