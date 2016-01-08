@@ -1,0 +1,15 @@
+Roads:
+Yambol Sliven 154.35 56.1
+Kotel Sliven 71.58 43.5
+Kotel Shumen 110.56 50
+Records:
+Shumen CH1541HC 08:35:40
+Yambol Y1212AK 17:15:32
+Kotel CH1541HC 11:20:12
+Sliven Y1212AK 19:24:11
+Sliven CH1245HC 06:15:18
+Yambol Y1212AK 07:15:12
+Kotel CH1245HC 10:15:32
+Shumen H5896KM 19:29:35
+Kotel H5896KM 21:42:00
+End

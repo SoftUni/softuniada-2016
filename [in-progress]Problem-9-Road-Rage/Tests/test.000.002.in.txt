@@ -1,0 +1,17 @@
+Roads:
+Matzoro Isterni 128.55 50
+Matzoro Kostos 87.25 48.5
+Isterni Kostos 100 40.52
+Melanes Galanado 230.5 50
+Records:
+Isterni AOM5973 13:20:11
+Matzoro IBK5674 08:35:12
+Matzoro AHI1278 08:35:12
+Galanado IBK5674 18:20:35
+Kostos COM1515 05:38:02
+Galanado COM1515 08:40:15
+Isterni IBK5674 14:28:30
+Melanes COM1515 22:31:50
+Kostos AOM5973 12:46:21
+Kostos COM1515 18:56:10
+End

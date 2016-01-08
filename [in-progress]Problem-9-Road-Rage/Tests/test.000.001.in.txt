@@ -1,0 +1,16 @@
+Roads:
+Sofia Plovdiv 145.4 90
+Plovdiv Varna 361.4 120.5
+Varna Burgas 114.95 30
+Burgas Plovdiv 252.9 42
+Records:
+Varna CA1234AA 19:48:25
+Burgas B4732AH 19:38:50
+Sofia CA1234AA 08:32:18
+Plovdiv A777777 15:28:56
+Varna SP33D 02:24:18
+Burgas A777777 18:42:15
+Plovdiv CA1234AA 15:32:18
+Sofia SP33D 04:32:51
+Varna B4732AH 08:18:36
+End
