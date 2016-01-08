@@ -1,0 +1,22 @@
+People:
+Go
+VB
+PHP
+JavaScript
+CSharp
+Ruby
+Java
+SQL
+Python
+Basic
+Connections:
+Go - PHP
+PHP - VB
+PHP - JavaScript
+CSharp - Ruby
+Java - Ruby
+Java - Python
+SQL - Basic
+Ruby - SQL
+Basic - Python
+END

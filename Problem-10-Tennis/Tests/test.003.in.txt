@@ -1,0 +1,33 @@
+People:
+Pesho1
+Pesho2
+Pesho3
+Pesho4
+Pesho5
+Pesho6
+Pesho7
+Pesho8
+Pesho9
+Pesho10
+Pesho11
+Pesho12
+Pesho13
+Pesho14
+Pesho15
+Connections:
+Pesho1 - Pesho2
+Pesho2 - Pesho3
+Pesho3 - Pesho4
+Pesho4 - Pesho5
+Pesho5 - Pesho1
+Pesho4 - Pesho6
+Pesho6 - Pesho7
+Pesho7 - Pesho8
+Pesho8 - Pesho9
+Pesho8 - Pesho10
+Pesho4 - Pesho11
+Pesho4 - Pesho12
+Pesho4 - Pesho13
+Pesho4 - Pesho14
+Pesho4 - Pesho15
+END
