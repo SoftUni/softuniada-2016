@@ -1,0 +1,5 @@
+circle OuterCircle 0 0 80
+circle InnerCircle 0 0 20
+rectangle TopRectangle -45 55 32 48
+rectangle BottomRectangle -60 30 60 -42
+End
