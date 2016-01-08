@@ -1,6 +1,0 @@
-rectangle Europe 0 60 70 0
-rectangle Italy 5 30 30 20
-rectangle Austria 35 20 60 10
-rectangle France 35 40 60 30
-circle Alps 30 30 20
-End

@@ -1,3 +1,0 @@
-rectangle Alpha -60 50 40 -20
-rectangle Beta -10 30 20 0
-End

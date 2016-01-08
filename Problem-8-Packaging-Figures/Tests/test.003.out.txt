@@ -1,1 +1,0 @@
-OuterCircle < BottomRectangle < InnerCircle

@@ -1,8 +1,0 @@
-circle FirstCircle 20 -80 50
-circle SecondCircle -10 10 20
-circle ThirdCircle 40 -20 20
-square Square -30 30 40
-rectangle Rect -20 20 10 10
-circle InnermostCircle -18 15 10
-rectangle Rect2 -20 20 10 15
-End

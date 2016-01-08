@@ -1,5 +1,0 @@
-rectangle Alpha -60 50 40 -20
-square Beta -10 30 40
-circle Delta 0 10 7
-circle Gamma 5 10 6
-End
