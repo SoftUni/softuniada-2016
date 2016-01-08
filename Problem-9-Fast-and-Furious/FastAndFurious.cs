@@ -6,11 +6,16 @@ using System.Threading;
 
 public class FastAndFurious
 {
-    private static Dictionary<string, List<string>> cameras = new Dictionary<string, List<string>>();
-    private static Dictionary<string, Road> roads = new Dictionary<string, Road>();
-    private static Dictionary<string, SortedSet<CarInfo>> cars = new Dictionary<string, SortedSet<CarInfo>>();
-    private static Dictionary<string, TimeSpan> shortestTimes = new Dictionary<string, TimeSpan>();
-    private static SortedSet<string> speedingCars = new SortedSet<string>();
+    private static Dictionary<string, List<string>> cameras = 
+        new Dictionary<string, List<string>>();
+    private static Dictionary<string, Road> roads = 
+        new Dictionary<string, Road>();
+    private static Dictionary<string, SortedSet<CarInfo>> cars = 
+        new Dictionary<string, SortedSet<CarInfo>>();
+    private static Dictionary<string, TimeSpan> shortestTimes = 
+        new Dictionary<string, TimeSpan>();
+    private static SortedSet<string> speedingCars = 
+        new SortedSet<string>();
 
     public static void Main()
     {
@@ -39,7 +44,7 @@ public class FastAndFurious
 
     private static void ReadInput()
     {
-        Console.ReadLine(); // Roads:
+        Console.ReadLine(); // Skip "Roads:"
         string line;
         while ((line = Console.ReadLine()) != "Records:")
         {
@@ -143,5 +148,45 @@ public class FastAndFurious
         }
 
         return times[secondCamera];
+    }
+}
+
+class Road
+{
+    public Road(string firstCameraName, string secondCameraName, double distance, double speedLimit)
+    {
+        this.FirstCameraName = firstCameraName;
+        this.SecondCameraName = secondCameraName;
+        this.Distance = distance;
+        this.SpeedLimit = speedLimit;
+        this.MinimumTime = TimeSpan.FromHours(distance / speedLimit);
+    }
+
+    public string FirstCameraName { get; private set; }
+
+    public string SecondCameraName { get; private set; }
+
+    public double Distance { get; private set; }
+
+    public double SpeedLimit { get; private set; }
+
+    public TimeSpan MinimumTime { get; private set; }
+}
+
+class CarInfo : IComparable<CarInfo>
+{
+    public CarInfo(string cameraName, DateTime recordingTime)
+    {
+        this.CameraName = cameraName;
+        this.RecordingTime = recordingTime;
+    }
+
+    public string CameraName { get; private set; }
+
+    public DateTime RecordingTime { get; private set; }
+
+    public int CompareTo(CarInfo other)
+    {
+        return this.RecordingTime.CompareTo(other.RecordingTime);
     }
 }
