@@ -1,4 +1,4 @@
-People: 
+People:
 Pesho1
 Pesho2
 Pesho3
@@ -20,7 +20,7 @@ Pesho18
 Pesho19
 Pesho20
 Pesho21
-Connections: 
+Connections:
 Pesho1 - Pesho2
 Pesho2 - Pesho3
 Pesho3 - Pesho1

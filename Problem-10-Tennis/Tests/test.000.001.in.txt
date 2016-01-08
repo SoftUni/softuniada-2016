@@ -1,9 +1,9 @@
-People: 
+People:
 Pesho
 Maria
 Ivan
 Gosho
-Connections: 
+Connections:
 Pesho - Gosho
 Maria - Ivan
 Ivan - Gosho

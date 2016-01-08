@@ -1,4 +1,4 @@
-People: 
+People:
 Pesho1
 Pesho2
 Pesho3
@@ -391,7 +391,7 @@ Pesho389
 Pesho390
 Pesho391
 Pesho392
-Connections: 
+Connections:
 Pesho1 - Pesho2
 Pesho2 - Pesho3
 Pesho3 - Pesho1

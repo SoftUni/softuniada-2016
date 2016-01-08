@@ -1,4 +1,4 @@
-People: 
+People:
 Pesho
 Maria
 Ivan
@@ -7,7 +7,7 @@ Penka
 Kiril
 Doncho
 Asen
-Connections: 
+Connections:
 Pesho - Maria
 Maria - Ivan
 Ivan - Gosho

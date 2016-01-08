@@ -1,7 +1,9 @@
 import java.util.*;
 import java.util.regex.Pattern;
 
-public class Tennis {
+// The "Blossom" algorithm - https://en.wikipedia.org/wiki/Blossom_algorithm
+
+public class TennisBlossom {
 
     private static final Pattern pattern = Pattern.compile(" - ");
 
@@ -97,13 +99,12 @@ public class Tennis {
         return matches / 2;
     }
 
-    // Usage example
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         List<String> people = new ArrayList<String>();
         scanner.nextLine();
         String line = scanner.nextLine();
-        while (!line.equals("Connections: "))
+        while (!line.equals("Connections:"))
         {
             people.add(line);
             line = scanner.nextLine();
