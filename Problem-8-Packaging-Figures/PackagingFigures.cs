@@ -56,6 +56,22 @@ public class PackagingFigures
 
     private static bool IsFigureInsideOther(Figure inner, Figure outer)
     {
+        if (inner is Circle && outer is Circle)
+        {
+            var innerCircle = inner as Circle;
+            var outerCircle = outer as Circle;
+            double deltaX = outerCircle.Center.X - innerCircle.Center.X;
+            double deltaY = outerCircle.Center.Y - innerCircle.Center.Y;
+            double distanceBetweenCentersSquared = deltaX * deltaX + deltaY * deltaY;
+            if (innerCircle.Radius > outerCircle.Radius || distanceBetweenCentersSquared > outerCircle.Radius * outerCircle.Radius)
+            {
+                return false;
+            }
+
+            double deltaR = outerCircle.Radius - innerCircle.Radius;
+            return distanceBetweenCentersSquared <= deltaR * deltaR;
+        }
+
         return outer.IsInside(inner.PointA) &&
             outer.IsInside(inner.PointB) &&
             outer.IsInside(inner.PointC) &&
@@ -64,7 +80,7 @@ public class PackagingFigures
 
     private static List<string> BuildLongestSequence(List<Figure> figures)
     {
-        // Initialize childrenCount[] and maxSeqLen[] for each figure
+        //Initialize childrenCount[] and maxSeqLen[] for each rectangle
         const int NotCalculated = -1;
         const int NoNextFigure = -1;
         int[] maxLengths = new int[figures.Count];
@@ -129,127 +145,5 @@ public class PackagingFigures
         }
 
         return sequence;
-    }
-}
-
-class Point
-{
-    public Point(double x, double y)
-    {
-        this.X = x;
-        this.Y = y;
-    }
-
-    public double X { get; private set; }
-
-    public double Y { get; private set; }
-}
-
-abstract class Figure
-{
-    public Figure(string name, Point pointA, Point pointB, Point pointC, Point pointD)
-    {
-        this.Name = name;
-        this.PointA = pointA;
-        this.PointB = pointB;
-        this.PointC = pointC;
-        this.PointD = pointD;
-        this.ParentFigures = new List<int>();
-    }
-
-    public string Name { get; private set; }
-
-    public Point PointA { get; private set; }
-
-    public Point PointB { get; private set; }
-
-    public Point PointC { get; private set; }
-
-    public Point PointD { get; private set; }
-
-    public List<int> ParentFigures { get; set; }
-
-    public int ChildFiguresCount { get; set; }
-
-    public abstract bool IsInside(Point point);
-}
-
-class Rectangle : Figure
-{
-    public Rectangle(string name, Point topLeft, Point topRight, Point bottomLeft, Point bottomRight)
-        : base(name, topLeft, topRight, bottomLeft, bottomRight)
-    {
-    }
-
-    public static Rectangle Parse(string rectangleString)
-    {
-        string[] rectangleParts = rectangleString.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-        double[] rectangleCoords = rectangleParts.Skip(1).Select(double.Parse).ToArray();
-
-        return new Rectangle(
-            rectangleParts[0],
-            new Point(rectangleCoords[0], rectangleCoords[1]),
-            new Point(rectangleCoords[2], rectangleCoords[1]),
-            new Point(rectangleCoords[0], rectangleCoords[3]),
-            new Point(rectangleCoords[2], rectangleCoords[3]));
-    }
-
-    public override bool IsInside(Point point)
-    {
-        return this.PointA.X <= point.X && point.X <= this.PointB.X &&
-            this.PointC.Y <= point.Y && point.Y <= PointB.Y;
-    }
-}
-
-class Square : Rectangle
-{
-    public Square(string name, Point topLeft, Point topRight, Point bottomLeft, Point bottomRight)
-        : base(name, topLeft, topRight, bottomLeft, bottomRight)
-    {
-    }
-
-    public static new Square Parse(string squareString)
-    {
-        string[] squareParts = squareString.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-        double[] squareCoords = squareParts.Skip(1).Select(double.Parse).ToArray();
-        return new Square(
-            squareParts[0],
-            new Point(squareCoords[0], squareCoords[1]),
-            new Point(squareCoords[0] + squareCoords[2], squareCoords[1]),
-            new Point(squareCoords[0], squareCoords[1] - squareCoords[2]),
-            new Point(squareCoords[0] + squareCoords[2], squareCoords[1] - squareCoords[2]));
-    }
-
-    public override bool IsInside(Point point)
-    {
-        return base.IsInside(point);
-    }
-}
-
-class Circle : Figure
-{
-    private const double Epsilon = 0.01;
-
-    public Circle(string name, Point center, double radius)
-        : base(name, new Point(center.X, center.Y + radius), new Point(center.X + radius, center.Y), new Point(center.X, center.Y - radius), new Point(center.X - radius, center.Y))
-    {
-        this.Center = center;
-        this.Radius = radius;
-    }
-
-    public Point Center { get; private set; }
-
-    public double Radius { get; set; }
-
-    public static Circle Parse(string circleString)
-    {
-        string[] circleParts = circleString.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-        double[] circleCoords = circleParts.Skip(1).Select(double.Parse).ToArray();
-        return new Circle(circleParts[0], new Point(circleCoords[0], circleCoords[1]), circleCoords[2]);
-    }
-
-    public override bool IsInside(Point point)
-    {
-        return Math.Pow(point.X - this.Center.X, 2) + Math.Pow(point.Y - this.Center.Y, 2) - Math.Pow(this.Radius, 2) <= Epsilon;
     }
 }
