@@ -1,0 +1,1 @@
+Rectangle and circle do not cross
