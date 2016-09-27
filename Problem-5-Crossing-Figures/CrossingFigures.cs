@@ -1,10 +1,12 @@
-﻿using System;
+using System;
 using System.Threading;
 using System.Globalization;
 using System.Linq;
 
 public class CrossingFigures
 {
+    public const double Epsilon = 0.01;
+
     private static Rectangle rectangle;
     private static Circle circle;
 
@@ -28,21 +30,36 @@ public class CrossingFigures
             {
                 Console.WriteLine("Rectangle inside circle");
             }
-            else if (topLeftInsideCircle || topRightInsideCircle || bottomLeftInsideCircle || bottomRightInsideCircle)
-            {
-                Console.WriteLine("Rectangle and circle cross");
-            }
             else if (topInsideRectangle && rightInsideRectangle && bottomInsideRectangle && leftInsideRectangle)
             {
                 Console.WriteLine("Circle inside rectangle");
             }
-            else if (topInsideRectangle || rightInsideRectangle || bottomInsideRectangle || leftInsideRectangle)
-            {
-                Console.WriteLine("Rectangle and circle cross");
-            }
             else
             {
-                Console.WriteLine("Rectangle and circle do not cross");
+                // None is inside the other. Check boundary conditions
+                var centerDistance = new Point(Math.Abs(circle.Center.X - rectangle.Center.X), Math.Abs(circle.Center.Y - rectangle.Center.Y));
+                var width = rectangle.TopRight.X - rectangle.TopLeft.X;
+                var height = rectangle.TopLeft.Y - rectangle.BottomLeft.Y;
+                if (centerDistance.X > width / 2 + circle.Radius || centerDistance.Y > height / 2 + circle.Radius)
+                {
+                    Console.WriteLine("Rectangle and circle do not cross");
+                }
+                else if (centerDistance.X <= width / 2 || centerDistance.Y <= height / 2)
+                {
+                    Console.WriteLine("Rectangle and circle cross");
+                }
+                else
+                {
+                    var cornerDistance = (centerDistance.X - width / 2) * (centerDistance.X - width / 2) + (centerDistance.Y - height / 2) * (centerDistance.Y - height / 2);
+                    if (cornerDistance - circle.Radius * circle.Radius <= Epsilon)
+                    {
+                        Console.WriteLine("Rectangle and circle cross");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Rectangle and circle do not cross");
+                    }
+                }
             }
         }
     }
@@ -80,8 +97,6 @@ public class Point
 
 public class Circle
 {
-    private const double Epsilon = 0.01;
-
     public Circle(Point center, double radius)
     {
         this.Center = center;
@@ -112,18 +127,19 @@ public class Circle
 
     public bool IsInsideCircle(Point point)
     {
-        return Math.Pow(point.X - this.Center.X, 2) + Math.Pow(point.Y - this.Center.Y, 2) - Math.Pow(this.Radius, 2) <= Epsilon;
+        return (point.X - this.Center.X) * (point.X - this.Center.X) + (point.Y - this.Center.Y) * (point.Y - this.Center.Y) - this.Radius * this.Radius <= CrossingFigures.Epsilon;
     }
 }
 
 public class Rectangle
 {
-    public Rectangle(Point topLeft, Point topRight, Point bottomLeft, Point bottomRight)
+    public Rectangle(Point topLeft, Point topRight, Point bottomLeft, Point bottomRight, Point center)
     {
         this.TopLeft = topLeft;
         this.TopRight = topRight;
         this.BottomLeft = bottomLeft;
         this.BottomRight = bottomRight;
+        this.Center = center;
     }
 
     public Point TopLeft { get; private set; }
@@ -134,6 +150,8 @@ public class Rectangle
 
     public Point BottomRight { get; private set; }
 
+    public Point Center { get; private set; }
+
     public static Rectangle Parse(string rectangleString)
     {
         double[] rectangleCoords = rectangleString.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries).Select(double.Parse).ToArray();
@@ -141,7 +159,8 @@ public class Rectangle
             new Point(rectangleCoords[0], rectangleCoords[1]),
             new Point(rectangleCoords[2], rectangleCoords[1]),
             new Point(rectangleCoords[0], rectangleCoords[3]),
-            new Point(rectangleCoords[2], rectangleCoords[3]));
+            new Point(rectangleCoords[2], rectangleCoords[3]),
+            new Point((rectangleCoords[0] + rectangleCoords[2]) / 2, (rectangleCoords[1] + rectangleCoords[3]) / 2));
     }
 
     public bool IsInsideRectangle(Point point)
